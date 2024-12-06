@@ -156,16 +156,16 @@ function Categorize(props) {
                         <h1>Belongs To</h1>
                         <div className="flex flex-col gap-2">
                             {
-                                totalCategories.length > 0 ?
+                                newCategories.length > 0 ?
                                 totalCategories.map((cat, index) => {
                                     return(
                                         <>
                                             <div key={index}>
-                                                <select id={index} className="cat w-52" onChange={(e)=> addBelong(e.target.id, e.target.value)}>
+                                                <select key={index} id={index} className="cat w-52" onChange={(e)=> addBelong(e.target.id, e.target.value)}>
                                                     {
                                                         totalCategories.length > 0 &&
                                                         totalCategories.map((cat, i) => {
-                                                            return <option defaultValue={cat} index={index} id={i}>{cat}</option>
+                                                            return <option key={i} defaultValue={cat} index={index} id={i}>{cat}</option>
                                                         })
                                                     }
                                                 </select>
