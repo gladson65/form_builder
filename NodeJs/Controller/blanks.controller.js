@@ -12,9 +12,12 @@ export function createBlanks(req, res) {
     newBlanks.save().then((data)=> {
 
         if (!data) {
-            return res.status(400).json({message: 'something went wrong'});
+            return res.status(400).json({message: 'something went wrong!'});
         }
 
         res.send(data);
+
+    }).catch((error) => {
+        return res.status(500).json({message: `Something went wrong. error: ${error}`})
     })
 }

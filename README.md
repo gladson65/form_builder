@@ -1,8 +1,19 @@
-# React + Vite
+# This is MERN stack Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## used technologies:
 
-Currently, two official plugins are available:
+# React.js + Vite + Redux Tool Kit + Node.js + MongoDB
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Instructions
+    - For first question.
+    - At first write category.
+    - To add more category type in 'add category input' and add by clicking '+' sign beside the category.
+    - then write items for the category.
+    - Add more items by writing 'add items' input and then click '+' sign.
+    - Then add belongs to. It is basically selecting category for the items.
+
+    - For second question.
+    - At first write a line and then select text which you want to make blank.
+    - Then mouseout from that input and you can get selected text below of that input and can see the proper
+    - fill in the blanks line in the 'preview section'  
